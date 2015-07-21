@@ -1,0 +1,10 @@
+1-elementsculmyca.in/nitkkr/exploreAll.php
+	Request in the form :- elementsculmyca.in/nitkkr/exploreAll.php?RemainingC=value
+	Response:- All items with calorie value less than "value" + if any of the values is still immature/newly added by user(not verified)  then a warning with it that 'Value not verified'
+2-elementsculmyca.in/nitkkr/getCalories.php
+	Request in the form :- elementsculmyca.in/nitkkr/getCalories.php?item=itemName
+	Response :- Calorie value of that "itemName" + if any of that item is not verified then one warning that 'Value not verified'
+3-elementsculmyca.in/nitkkr/addItem.php
+	Request in the form :-elementsculmyca.in/nitkkr/addItem.php?item=NewItemName&calorie=CalorieValue
+	Response :- If value is succesfully inserted then a json with a value inserted=>1
+4-
