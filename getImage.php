@@ -5,7 +5,7 @@
 	search($toSearch,$con);
 	function search($query,$con)
 	{
-		$url = "https://www.googleapis.com/customsearch/v1?key=AIzaSyBKP23m6LOgkPdXUQuEW6tS6K0Sa0b73oo&cx=004304064422499840228:fj47nlhoyvw&num=1&q=".urlencode( $query ).  "&fileType=png,jpg&searchType=image&fields=items(link)&alt=json";
+		$url = "https://www.googleapis.com/customsearch/v1?key=**YOUR API KEY HERE**&cx=**YOUR CX HERE**&num=1&q=".urlencode( $query ).  "&fileType=png,jpg&searchType=image&fields=items(link)&alt=json";
 		$result=perform_magic($url);
 		if ( $result['http_code'] == 403 )
       		echo "... error: daily limit exceeded ...";
